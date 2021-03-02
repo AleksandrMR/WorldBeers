@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ppp-wX-h69">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="5Gd-Vp-U2E">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="52n-bz-a2w" customClass="HomeVC" customModule="WorldBeersAM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zx7-tV-SfT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhd-ME-Cle">
+                                <rect key="frame" x="20" y="104" width="374" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="cRI-eS-Khn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYc-sV-a5G">
+                                <rect key="frame" x="20" y="196" width="374" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brandLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DFr-RK-TzV">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DFr-RK-TzV" secondAttribute="height" multiplier="1:1" id="ApB-1V-JcA"/>
+                                    <constraint firstAttribute="height" constant="240" id="b74-XP-Sxb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YIt-aR-tR1"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DFr-RK-TzV" firstAttribute="centerX" secondItem="zx7-tV-SfT" secondAttribute="centerX" id="BtB-q3-dvc"/>
+                            <constraint firstItem="Mhd-ME-Cle" firstAttribute="leading" secondItem="YIt-aR-tR1" secondAttribute="leading" constant="20" id="Drd-Me-0nB"/>
+                            <constraint firstItem="YIt-aR-tR1" firstAttribute="trailing" secondItem="Mhd-ME-Cle" secondAttribute="trailing" constant="20" id="Yxh-Y0-ymr"/>
+                            <constraint firstItem="Mhd-ME-Cle" firstAttribute="top" secondItem="YIt-aR-tR1" secondAttribute="top" constant="16" id="gl8-Q4-3hw"/>
+                            <constraint firstItem="DFr-RK-TzV" firstAttribute="centerY" secondItem="zx7-tV-SfT" secondAttribute="centerY" id="qDt-nZ-zNc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="OQ3-T0-0nM"/>
+                    <navigationItem key="navigationItem" title="Home" id="maz-yh-QeW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="brandNameLabel" destination="Mhd-ME-Cle" id="K5g-oe-vnn"/>
+                        <outlet property="infoBrandLabel" destination="uYc-sV-a5G" id="2SB-su-7Mq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4G-X2-NmU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="171.42857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DGV-hT-JiH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ppp-wX-h69" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dGz-wp-Q5U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="52n-bz-a2w" kind="relationship" relationship="rootViewController" id="GQw-i0-w6t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H89-y3-Qej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="171.42857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brandLogo" width="457.5" height="549"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

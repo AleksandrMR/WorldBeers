@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RSv-nE-Y3g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="k48-md-OAG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" id="5Zo-L8-4eT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="53z-TO-iae"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CY3-T4-gV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-515" y="404"/>
+        </scene>
+        <!--Beers-->
+        <scene sceneID="VUF-dx-U4U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Beers" id="Q4w-51-4rB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Beers" image="hand.point.down.fill" catalog="system" id="dtT-wU-cVx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j34-Y9-ANd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="405"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aGP-Ju-vjT">
+            <objects>
+                <tabBarController id="RSv-nE-Y3g" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rQG-wH-8p4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5Zo-L8-4eT" kind="relationship" relationship="viewControllers" id="CHW-jX-Dn6"/>
+                        <segue destination="Q4w-51-4rB" kind="relationship" relationship="viewControllers" id="lgI-3F-FRN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fma-bJ-lc1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="-103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hand.point.down.fill" catalog="system" width="111" height="128"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+    </resources>
+</document>
