@@ -11,6 +11,8 @@ import Alamofire
 enum RequestRouter: URLRequestBuilder {
     case getListOfBeers(pagen: Int, limit: Int)
     
+    
+    
     var path: String {
         switch self {
         case .getListOfBeers:

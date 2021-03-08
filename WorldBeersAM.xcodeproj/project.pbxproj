@@ -548,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXGYHST7SN;
-				INFOPLIST_FILE = /Users/AleksandR/Documents/Development/miniProjects/TEST/WorldBeersAM/WorldBeersAM/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = WorldBeersAM/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +569,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HXGYHST7SN;
-				INFOPLIST_FILE = /Users/AleksandR/Documents/Development/miniProjects/TEST/WorldBeersAM/WorldBeersAM/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = WorldBeersAM/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
